@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DRIP LORD AARIZ — AI</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+<nav class="nav">
+<div class="nav-left">
+<div class="brand">
+<img src="drip-lord-aariz.jpg" alt="mascot" class="brand-mascot">
+<div class="brand-text">
+<h1>DRIP LORD AARIZ</h1>
+<p class="byline">Made by Surendher</p>
+</div>
+</div>
+</div>
+
+
+<div class="nav-right">
+<button id="new-convo" class="btn ghost">New convo</button>
+<button id="about-btn" class="btn">About</button>
+</div>
+</nav>
+
+
+<main class="main">
+<aside class="sidebar" id="sidebar">
+<div class="sidebar-header">Conversations</div>
+<ul id="convo-list" class="convo-list">
+<!-- conversation items appended here -->
+</ul>
+</aside>
+
+
+<section class="chat-panel">
+<div class="chat-header">
+<div class="chat-title">Welcome — DRIP LORD AARIZ</div>
+<div class="chat-sub">Mascot & compact chat interface</div>
+</div>
+
+
+<div id="chatbox" class="chatbox">
+<div class="message bot-message">Hey — I'm DRIP LORD AARIZ. Ask me anything.</div>
+</div>
+
+
+<form id="chat-form" class="chat-form">
+<input id="user-input" class="chat-input" type="text" placeholder="Type your message..." autocomplete="off">
+<button type="submit" class="btn send">Send</button>
+</form>
+</section>
+</main>
+
+
+<!-- About modal -->
+<div id="about-modal" class="modal" aria-hidden="true">
+<div class="modal-card">
+<button class="modal-close" id="about-close">✕</button>
+<h2>About DRIP LORD AARIZ</h2>
+<p>Edit your bio below and upload an image. This info is only stored client-side for demos.</p>
+
+
+<label for="bio">Bio</label>
+<textarea id="bio" rows="4" placeholder="Write a short bio..."></textarea>
+
+
+<label for="avatar">Upload image</label>
+<input id="avatar" type="file" accept="image/*">
+
+
+<div class="modal-actions">
+<button id="save-about" class="btn">Save</button>
+<button id="cancel-about" class="btn ghost">Cancel</button>
+</div>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
